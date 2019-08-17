@@ -1,0 +1,23 @@
+.main-section {
+    background: url("../images/first_block.png") center center no-repeat;
+    background-size: cover;
+}
+
+.cover {
+    margin: 0 auto;
+    width: 940px;
+    position: relative;
+}
+
+.top-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-top: 12px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 90px;
+    margin-right: 70px;
+}

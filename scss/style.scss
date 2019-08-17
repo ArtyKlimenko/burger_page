@@ -1,0 +1,18 @@
+$red: #e45028;
+$yellow: #f9b43b;
+$dark: #2f3234;
+$gray: #58595a;
+$commonColor: #fff;
+
+@import "../scss/layouts/normalize";
+@import "../scss/layouts/base";
+//
+@import "../scss/blocks/fonts";
+@import "../scss/blocks/banner";
+@import "../scss/blocks/first-Section";
+@import "../scss/blocks/ingredients";
+@import "../scss/blocks/members-section";
+@import "../scss/blocks/nav";
+@import "../scss/blocks/pagination";
+@import "../scss/blocks/recipe-section";
+@import "../scss/blocks/scroll-down";

@@ -1,0 +1,36 @@
+.ingredients {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.ingredients__block {
+    flex: 1;
+}
+
+.ingredients__list {
+    list-style: none;
+}
+
+.ingredients__item {
+    text-align: center;
+
+    &__item img {
+        margin-bottom: 30px;
+    }
+}
+
+.subtitle {
+    font-size: 24px;
+    font-family: 'lifehackmedium';
+    color: $dark;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.block-desc {
+    font-size: 14px;
+    font-family: 'ubunturegular';
+    color: $gray;
+    line-height: 1.714;
+}

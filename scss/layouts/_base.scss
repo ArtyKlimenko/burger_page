@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'ubunturegular';
+    -webkit-font-smoothing: antialiased
+}
+
+.wrapper {
+    min-height: 100vh;
+}

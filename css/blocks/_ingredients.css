@@ -1,0 +1,37 @@
+.ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.ingredients__block {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.ingredients__list {
+  list-style: none; }
+
+.ingredients__item {
+  text-align: center; }
+  .ingredients__item__item img {
+    margin-bottom: 30px; }
+
+.subtitle {
+  font-size: 24px;
+  font-family: 'lifehackmedium';
+  color: #2f3234;
+  line-height: 1;
+  margin-bottom: 24px; }
+
+.block-desc {
+  font-size: 14px;
+  font-family: 'ubunturegular';
+  color: #58595a;
+  line-height: 1.714; }

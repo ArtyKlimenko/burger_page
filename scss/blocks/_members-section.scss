@@ -1,0 +1,59 @@
+.members__list {
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.members__item {
+    width: 25%;
+    position: relative;
+
+    &:hover .members__desc {
+        opacity: 1;
+    }
+}
+
+.img-block {
+    height: 100%;
+}
+
+.members_pic {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.members__desc {
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 10;
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    padding: 50px 20px;
+    opacity: 0;
+}
+
+.members__name {
+    margin-bottom: 30px;
+    font-family: 'Gagalin';
+    color: $commonColor;
+}
+
+.members__review {
+    p {
+        font-family: 'ubuntulight';
+        color: $commonColor;
+        font-size: 14px;
+        line-height: 1.714em;
+    }
+}
+
+button.members__btn {
+    margin-top: 20px;
+    border: none;
+    background-color: $dark;
+}

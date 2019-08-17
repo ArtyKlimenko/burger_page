@@ -1,0 +1,35 @@
+.main-banner {
+    max-width: 892px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.banner {
+    max-width: 435px;
+}
+
+.banner__img {
+    flex: 1;
+}
+
+.banner__text {
+    padding: 60px 20px 0;
+    flex: 1;
+}
+
+.banner__heading {
+    font-size: 72px;
+    color: $yellow;
+    font-family: 'Gagalin';
+    margin-bottom: 30px;
+}
+
+.banner__desc {
+    font-family: 'lifehackmedium';
+    color: $commonColor;
+    font-size: 48px;
+    line-height: 1;
+}
