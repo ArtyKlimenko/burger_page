@@ -4,9 +4,9 @@
 }
 
 .recipe {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
-    min-height: 650px;
+//    min-height: 650px;
     display: flex;
     flex-flow: column;
     align-items:center;

@@ -5,8 +5,9 @@
 
 .cover {
     margin: 0 auto;
-    width: 940px;
+    max-width: 940px;
     position: relative;
+    min-height: 650px;
 }
 
 .top-menu {

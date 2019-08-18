@@ -1,6 +1,6 @@
 .scroll-down {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 40px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
 }

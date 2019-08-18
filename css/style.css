@@ -325,8 +325,8 @@ body {
   font-family: 'ubunturegular';
   -webkit-font-smoothing: antialiased; }
 
-.wrapper {
-  min-height: 100vh; }
+.section {
+  height: 100vh; }
 
 @font-face {
   font-family: 'Gagalin';
@@ -372,8 +372,8 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -411,8 +411,9 @@ body {
 
 .cover {
   margin: 0 auto;
-  width: 940px;
-  position: relative; }
+  max-width: 940px;
+  position: relative;
+  min-height: 650px; }
 
 .top-menu {
   display: -webkit-box;
@@ -448,8 +449,8 @@ body {
 
 .ingredients__block {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1; }
+  -ms-flex: 1 1 313px;
+  flex: 1 1 313px; }
 
 .ingredients__list {
   list-style: none; }
@@ -483,6 +484,7 @@ body {
 
 .members__item {
   width: 25%;
+  height: 50%;
   position: relative; }
   .members__item:hover .members__desc {
     opacity: 1; }
@@ -641,9 +643,8 @@ button.members__btn {
   background-size: cover; }
 
 .recipe {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
-  min-height: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -664,13 +665,8 @@ button.members__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-bottom: 40px; }
+  position: absolute;
+  bottom: 40px;
+  left: 50%; }
 
 /*# sourceMappingURL=style.css.map */
