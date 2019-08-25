@@ -1,36 +1,79 @@
 .ingredients {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
+
+    @include phones {
+        display: flex;
+        flex-flow: column;
+        max-width: 95%;
+    };
 }
 
 .ingredients__block {
-    flex: 1 1 313px;
+    flex: 1 1 33%;
+
+    @include phones {
+        margin-bottom: rem(20px);
+    };
 }
 
 .ingredients__list {
     list-style: none;
+
+    @include phones {
+        display: flex;
+    };
+}
+
+.ingredients__item-description {
+    @include phones {
+        display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    padding-left: 24px;
+    };
 }
 
 .ingredients__item {
     text-align: center;
 
+    @include phones {
+        text-align: left;
+    };
+
     &__item img {
-        margin-bottom: 30px;
+        margin-bottom: rem(30px);
     }
 }
 
+.meat, .hand, .natural {
+    max-width: rem(100px);
+    max-height: rem(90px);
+    margin-bottom: rem(20px);
+
+    @include phones {
+        max-width: rem(80px);
+        max-height: rem(70px);
+        margin-bottom: 0;
+    };
+}
+
 .subtitle {
-    font-size: 24px;
+    font-size: rem(24px);
     font-family: 'lifehackmedium';
     color: $dark;
     line-height: 1;
-    margin-bottom: 24px;
+    margin-bottom: rem(24px);
 }
 
 .block-desc {
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: 'ubunturegular';
     color: $gray;
     line-height: 1.714;
+
+    @include  phones {
+        text-align: left;
+    };
 }

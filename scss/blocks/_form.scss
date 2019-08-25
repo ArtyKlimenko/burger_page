@@ -1,0 +1,183 @@
+.form-heading {
+    @include phones {
+        padding: 0 10%;
+        text-align: center;
+    };
+}
+
+.banner__heading.banner__heading--order {
+    @include phones {
+        font-size: rem(72px);
+    };
+}
+
+.form__element {
+    display: flex;
+
+    @include tablets {
+    flex-flow: column;
+    align-items: center;
+    padding: 0 18%;
+    };
+
+    @include phones {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    };
+}
+
+.form__column {
+    width: 100%;
+    margin-right: rem(20px);
+
+    @include tablets {
+        margin-right: 0;
+    };
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__row {
+    display: flex;
+}
+
+.form__block {
+    flex: 1;
+    margin-left: rem(20px);
+
+    &--textarea {
+        margin-right: 0;
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.form__block-title--hidden-for-mobile {
+    @include phones {
+        display: none;
+    };
+}
+
+.form__input {
+    padding: rem(8px) rem(20px);
+    background: $commonColor;
+    border-radius: rem(5px);
+    width: 100%;
+    margin-bottom: rem(20px);
+    //outline-color: $yellow;
+    //outline-width: 2px;
+    outline: none;
+    border: 2px solid transparent;
+
+    &:focus {
+    border: 2px solid $yellow;
+    border-radius: 5px;
+    outline: 1px;
+    }
+
+    &--textarea {
+        resize: none;
+        height: rem(123px);
+        margin-bottom: rem(30px);
+    }
+}
+
+.form__block-title {
+    color: $commonColor;
+    margin-bottom: rem(10px);
+}
+
+.radio-row {
+    display: flex;
+    margin-bottom: rem(20px);
+
+    @include phones {
+        justify-content: center;
+    };
+}
+
+.radio__label {
+    margin-right: rem(20px);
+    color: $commonColor;
+    display: flex;
+    align-items: center;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.radio-custom {
+    width: rem(15px);
+    height: rem(15px);
+    border-radius: 50%;
+    background-color: $commonColor;
+    margin-right: rem(10px);
+    order: -1;
+}
+
+.radio-button {
+    display: none;
+}
+
+.radio-button:checked ~.radio-custom {
+        background: radial-gradient($red 4px, #fff 3px);
+        transition: .5s;
+}
+.checkbox-row {
+    margin-bottom: rem(20px);
+
+    @include phones {
+        display: flex;
+        justify-content: center;
+    };
+}
+
+.checkbox__button {
+    color: $commonColor;
+    display: flex;
+}
+
+.checkbox-custom {
+    width: rem(15px);
+    height: rem(15px);
+    background-color: $commonColor;
+    margin-right: rem(10px);
+    order: -1;
+    animation-name: default;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-input:checked ~.checkbox-custom {
+    background: url('/images/check.png') center center no-repeat;
+    background-color: #fff;
+}
+
+.button-row {
+    display: flex;
+
+    @include phones {
+        justify-content: center;
+    };
+}
+
+.order--form {
+    margin-right: rem(20px);
+}
+
+.reset {
+    padding: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+}

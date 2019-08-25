@@ -1,8 +1,12 @@
 .pagination {
     position: fixed;
-    right: 50px;
-    top: 90px;
+    right: rem(50px);
+    top: rem(90px);
     z-index: 999;
+
+    @include tablets {
+        display: none;
+    };
 }
 
 .pagination__list {
@@ -13,20 +17,20 @@
     list-style: none;
     color: $commonColor;
     justify-content: center;
-    max-width: 30px;
+    max-width: rem(30px);
     align-items: center;
 }
 
 .pagination__item {
-    margin: 0 0 10px;
+    margin: 0 0 rem(10px);
     &:last-child {
         margin: 0;
     }
 }
 
 .radio {
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     border-radius: 50%;
     border: 1px solid $commonColor;
     position: relative;
@@ -47,8 +51,8 @@
 
 .wrap {
     position: relative;
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     border: 1px solid transparent;
     position: relative;
     display: flex;

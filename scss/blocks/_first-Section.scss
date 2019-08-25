@@ -5,20 +5,60 @@
 
 .cover {
     margin: 0 auto;
-    max-width: 940px;
+    max-width: rem(940px);
     position: relative;
-    min-height: 650px;
+    min-height: rem(650px);
 }
 
 .top-menu {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    padding-top: 12px;
+    padding-top: rem(12px);
     justify-content: space-between;
+
+    @include tablets {
+        max-width: 95%;
+        margin: 0 auto;
+    };
 }
 
 .logo {
-    width: 90px;
-    margin-right: 70px;
+    width: rem(165px);
+    height: rem(80px);
+     @include phones {
+         height: rem(125px);
+     };
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu {
+    width: rem(24px);
+    height: rem(22px);
+    display: none;
+
+    @include tablets {
+        display: block;
+    };
+
+    @include phones {
+        display: block;
+        width: rem(35px);
+        height: rem(32px);
+    };
+
+}
+
+.scroll {
+    width: rem(30px);
+    height: rem(20px);
+
+    @include phones {
+        width: rem(42px);
+        height: rem(25px);
+    };
 }

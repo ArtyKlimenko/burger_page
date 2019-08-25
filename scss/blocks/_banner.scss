@@ -1,14 +1,24 @@
 .main-banner {
-    max-width: 892px;
+    max-width: rem(892px);
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    margin-bottom: 100px;
+//    margin-bottom: rem(100px);
+
+    @include tablets {
+        flex-flow: column;
+        justify-content: center;
+        padding: 0 25%;
+    };
+
+    @include phones {
+        padding: 0 5%;
+    };
 }
 
 .banner {
-    max-width: 435px;
+    max-width: 100%;
 }
 
 .banner__img {
@@ -16,20 +26,38 @@
 }
 
 .banner__text {
-    padding: 60px 20px 0;
+    padding: rem(60px) rem(20px) 0;
     flex: 1;
+
+    @include tablets {
+        text-align: center;
+        padding: rem(40px) 0;
+    };
+
+    @include phones {
+        padding: rem(50px) 0;
+    };
 }
 
 .banner__heading {
-    font-size: 72px;
+    font-size: rem(72px);
     color: $yellow;
     font-family: 'Gagalin';
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
+
+    @include phones {
+        font-size: rem(50px);
+    };
+
 }
 
 .banner__desc {
     font-family: 'lifehackmedium';
     color: $commonColor;
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1;
+
+    @include phones {
+        font-size: rem(42px);
+    };
 }

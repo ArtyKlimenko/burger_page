@@ -6,7 +6,9 @@ $commonColor: #fff;
 
 @import "../scss/layouts/normalize";
 @import "../scss/layouts/base";
+
 //
+@import "../scss/blocks/media";
 @import "../scss/blocks/fonts";
 @import "../scss/blocks/banner";
 @import "../scss/blocks/first-Section";
@@ -16,3 +18,9 @@ $commonColor: #fff;
 @import "../scss/blocks/pagination";
 @import "../scss/blocks/recipe-section";
 @import "../scss/blocks/scroll-down";
+@import "../scss/blocks/section-team";
+@import "../scss/blocks/section-menu";
+@import "../scss/blocks/section-form";
+@import "../scss/blocks/form";
+@import "../scss/blocks/section-contacts";
+@import "../scss/blocks/hamburger-menu";

@@ -1,0 +1,280 @@
+.section-menu {
+    position: relative;
+    background: url('/images/menu-cover.png') center center / cover no-repeat;
+    display: flex;
+}
+
+.menu-title {
+    width: rem(940px);
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: left;
+    padding: rem(113px) 0 0 0;
+}
+
+.menu-title .banner__heading {
+    margin-bottom: 0;
+    color: $commonColor;
+}
+
+.accordeon-wrap {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.accordeon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.accordeon-list {
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.accordeon-item {
+  display: flex;
+  max-width: 55%;
+
+  @include phones {
+      max-width: 87%;
+  };
+}
+
+.accordeon-item h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordeon__cover {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  min-width: rem(100px);
+  margin: 0;
+  justify-content: center;
+  position: relative;
+
+  @include  tablets {
+      min-width: rem(75px);
+  };
+
+  @include  phones {
+      min-width: rem(46px);
+  };
+}
+
+.toner {
+    background-color: rgba(20, 20, 20, .7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.accordeon__item--first {
+    background: url('/images/firts-burger.png') center center / cover no-repeat;
+    z-index: 1;
+}
+
+.accordeon__item--second {
+    background: url('/images/second-burger.png') center right / cover no-repeat;
+}
+
+.accordeon__item--third {
+    background: url('/images/third-burger.png') center right / cover no-repeat;
+}
+
+.secret {
+  color: white;
+  width: 0;
+  padding: 0;
+  font-family: 'ubunturegular';
+  font-size: rem(14px);
+  line-height: 1.7em;
+  overflow: hidden;
+}
+
+.accordeon-item.active .secret {
+  width: 100%;
+  padding: 8% 7%;
+  overflow: none;
+  background-color: rgba(49, 53, 53, .9);
+}
+
+.accordeon-item.active .text {
+    color: $yellow;
+}
+
+.text {
+  transform: rotate(-90deg);
+  color: white;
+  font-size: rem(40px);
+  min-width: rem(300px);
+  position: absolute;
+  bottom: rem(165px);
+  font-family: 'Gagalin';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.accordeon__item-name {
+    transform: rotate(-90deg);
+    min-width: 100%;
+    font-family: 'Gagalin';
+    font-size: 40px;
+    color: $commonColor;
+    min-width: 300px;
+    z-index: 2;
+}
+
+.accordeon-menu {
+    display: flex;
+    height: 100%;
+}
+
+.accordeon__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.item__cover {
+    background-color: rgba(49, 52, 53, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.item__recipe {
+    background-color: rgba(49, 52, 53, .9);
+    font-family: 'ubunturegular';
+    font-size: 14px;
+    padding: 62px 30px;
+    color: $commonColor;
+    line-height: 1.7em;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.item__recipe.active-recipe {
+    width: 40%;
+    padding: 62px 30px;
+    overflow: none;
+}
+
+.accordeon__item--first {
+    background: url('/images/firts-burger.png') center center / cover no-repeat;
+
+}
+
+.accordeon__item--second {
+    background: url('/images/second-burger.png') center right / cover no-repeat;
+}
+
+.accordeon__item--third {
+    background: url('/images/third-burger.png') center right / cover no-repeat;
+}
+
+
+
+.accordeon-list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+/*.accordeon-menu {
+    display: flex;
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+}
+
+.menu__item {
+    width: 7%;
+}
+
+.item__heading {
+    font-size: 40px;
+    color: $commonColor;
+    font-family: 'Gagalin';
+}
+
+.name-wrap {
+    width: 300px;
+    height: 50px;
+        transform: rotate(-90deg);
+}
+
+.menu__item--first {
+    background: url('/images/firts-burger.png') center center / cover no-repeat;
+}
+
+.menu__item--second {
+    background: url('/images/second-burger.png') center right / cover no-repeat;
+}
+
+.menu__item--third {
+    background: url('/images/third-burger.png') center right / cover no-repeat;
+}
+
+.item__cover {
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}*/
