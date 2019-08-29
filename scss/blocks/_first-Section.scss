@@ -16,7 +16,7 @@
     align-items: center;
     padding-top: rem(12px);
     justify-content: space-between;
-
+    position: relative;
     @include tablets {
         max-width: 95%;
         margin: 0 auto;
@@ -24,7 +24,7 @@
 }
 
 .logo {
-    width: rem(165px);
+    width: rem(80px);
     height: rem(80px);
      @include phones {
          height: rem(125px);

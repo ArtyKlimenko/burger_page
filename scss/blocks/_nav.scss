@@ -1,8 +1,61 @@
 .nav {
     @include tablets {
+        background-color: $dark;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 1000;
+        overflow: hidden;
         display: none;
+
+        &--active {
+            display: block;
+        }
     };
 }
+
+.hidden-menu-nav {
+    display: none;
+    @include tablets {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        max-width: 95%;
+        margin: 0 auto;
+        margin-bottom: 90px;
+    };
+
+    @include phones {
+        margin-bottom: 20px;
+    };
+}
+
+.close {
+    display: none;
+    @include tablets {
+        display: block;
+        width: rem(20px);
+        height: rem(20px);
+        margin-top: rem(28px);
+    };
+}
+
+.hidden-logo {
+    display: none;
+    @include tablets {
+        display: block;
+        margin-top: rem(12px);
+        max-width: 80px;
+        max-height: 80px;
+    };
+}
+
 .nav__menu {
     display: flex;
     flex-flow: row wrap;
@@ -14,19 +67,44 @@
     margin: 0;
     padding: 0;
 
+    @include tablets {
+        flex-flow: column;
+        font-size: 10px;
+    };
+
     a {
         text-decoration: none;
         color: $commonColor;
         padding: 0 rem(16px);
-    }
+        @include tablets {
+            flex-flow: column;
+            padding: rem(20px) 0;
+            font-size: 23px;
+        };
 
+        @include phones {
+            flex-flow: column;
+            padding: rem(20px) 0;
+            font-size: 20px;
+        };
+    }
+}
+
+.menu__item {
     @include tablets {
-        display: none;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
     };
 }
 
 .menu__item:first-child a {
     padding-left: 0;
+
+    @include tablets {
+        padding-right: 0;
+    };
 }
 
 .menu__item:last-child a {
@@ -52,4 +130,9 @@
     text-transform: uppercase;
     cursor: pointer;
     border: none;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }

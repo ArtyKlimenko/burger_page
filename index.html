@@ -16,27 +16,34 @@
         <div class="wrapper">
             <section class="section main-section">
                 <div class="cover">
-                    <div class="top-menu">
+                    <div class="top-menu" id="main">
                         <div class="logo">
                             <svg class="logo">
                                 <use xlink:href="../images/sprite.svg#logo"></use>
                             </svg>
-
                         </div>
                         <div class="nav">
+                            <div class="hidden-menu-nav">
+                                <a href="#main"><svg class="hidden-logo">
+                                    <use xlink:href="../images/sprite.svg#logo"></use>
+                                </svg></a>
+                                <svg class="close">
+                                    <use xlink:href="../images/sprite.svg#close"></use>
+                                </svg>
+                            </div>
                             <ul class="nav__menu">
-                                <li class="menu__item"><a href="#best">О нас</a></li>
-                                <li class="menu__item">&#8226;<a href="#">Бургеры</a></li>
-                                <li class="menu__item">&#8226;<a href="#team">Команда</a></li>
-                                <li class="menu__item">&#8226;<a href="#menu">Меню</a></li>
-                                <li class="menu__item">&#8226;<a href="#review">Отзывы</a></li>
-                                <li class="menu__item">&#8226;<a href="#order">Как мы работаем</a></li>
-                                <li class="menu__item">&#8226;<a href="#map">Контакты</a></li>
+                                <li class="menu__item 1"><a href="#best">О нас</a></li>
+                                <li class="menu__item 2">&#8226;<a href="#">Бургеры</a></li>
+                                <li class="menu__item 3">&#8226;<a href="#team">Команда</a></li>
+                                <li class="menu__item 4">&#8226;<a href="#menu">Меню</a></li>
+                                <li class="menu__item 5">&#8226;<a href="#review">Отзывы</a></li>
+                                <li class="menu__item 6">&#8226;<a href="#order">Как мы работаем</a></li>
+                                <li class="menu__item 7">&#8226;<a href="#map">Контакты</a></li>
                             </ul>
                         </div>
                         <div class="button-wrapper">
                             <div class="button">
-                                <button type="button" class="order">Заказать</button>
+                                <button type="button" class="order"><a href="#form">Заказать</a></button>
                             </div>
                             <div class="burger-menu">
                                 <svg class="burger-menu">
@@ -509,6 +516,32 @@
         </div>
     </div>
     </div>
+    <script>
+        var hm = document.querySelector('.burger-menu');
+        var nav = document.querySelector('.nav');
+        var close = document.querySelector('.close');
+        var menu = document.querySelector('.nav__menu');
+        var link = document.querySelector('.menu__item');
+        var logo = document.querySelector('.hidden-logo');
+
+        hm.addEventListener('click', function() {
+            nav.classList.toggle('nav--active');
+        });
+
+        close.addEventListener('click', function() {
+            nav.classList.toggle('nav--active');
+        });
+
+        logo.addEventListener('click', function() {
+            nav.classList.toggle('nav--active');
+        });
+
+        menu.addEventListener('click', function() {
+            nav.classList.remove('nav--active');
+            console.log('удалил класс');
+        });
+
+    </script>
     <div class="pagination">
         <div class="pagination__menu">
             <ul class="pagination__list">
