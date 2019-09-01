@@ -1735,6 +1735,9 @@ button.members__btn {
     .container-form {
       padding-top: 1.875rem; } }
 
+.banner__heading--order {
+  text-align: center; }
+
 @media screen and (max-width: 480px) {
   .form-heading {
     padding: 0 10%;
