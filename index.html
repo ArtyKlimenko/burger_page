@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width; initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Burgers</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="/css/variables.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -33,7 +31,7 @@
                             </div>
                             <ul class="nav__menu">
                                 <li class="menu__item 1"><a href="#best">О нас</a></li>
-                                <li class="menu__item 2">&#8226;<a href="#">Бургеры</a></li>
+                                <li class="menu__item 2">&#8226;<a href="#slider">Бургеры</a></li>
                                 <li class="menu__item 3">&#8226;<a href="#team">Команда</a></li>
                                 <li class="menu__item 4">&#8226;<a href="#menu">Меню</a></li>
                                 <li class="menu__item 5">&#8226;<a href="#review">Отзывы</a></li>
@@ -139,22 +137,21 @@
             <section class="section section-slider" id="slider">
                 <div class="slider">
                     <div class="prev">
-                        <a href="#">
                             <svg class="prev-button">
                                 <use xlink:href="../images/sprite.svg#scroll"></use>
                             </svg>
-                        </a>
                     </div>
+                    <div class="slide-wrapper">
                     <div class="slider__content">
                         <div class="slider__image-block">
-                            <div class="composition-hidden">
+                            <div class="composition-hidden" id="ch1">
                                 <div class="burger-composition">
                                     <svg class="composition">
                                         <use xlink:href="./images/sprite.svg#burgerSlide"></use>
                                     </svg>
                                     <p>Состав</p>
                                 </div>
-                                <div class="hidden-block">
+                                <div class="hidden-block" id="hb1">
 
                                     <svg class="hidden-close">
                                         <use xlink:href="../images/sprite.svg#close"></use>
@@ -266,12 +263,253 @@
                             </div>
                         </div>
                     </div>
+                    <div class="slider__content">
+                        <div class="slider__image-block">
+                            <div class="composition-hidden" id="ch2">
+                                <div class="burger-composition">
+                                    <svg class="composition">
+                                        <use xlink:href="./images/sprite.svg#burgerSlide"></use>
+                                    </svg>
+                                    <p>Состав</p>
+                                </div>
+                                <div class="hidden-block" id="hb2">
+
+                                    <svg class="hidden-close">
+                                        <use xlink:href="../images/sprite.svg#close"></use>
+                                    </svg>
+
+                                    <ul class="hidden__list">
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="beef">
+                                                    <use xlink:href="../images/sprite.svg#beef"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Говядина</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>300 г</p>
+                                            </div>
+                                        </li>
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="buns">
+                                                    <use xlink:href="../images/sprite.svg#buns"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Булочка</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>100 г</p>
+                                            </div>
+                                        </li>
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="salad">
+                                                    <use xlink:href="../images/sprite.svg#salad"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Зелень</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>70 г</p>
+                                            </div>
+                                        </li>
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="sauce">
+                                                    <use xlink:href="../images/sprite.svg#sauce"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Соус</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>150 г</p>
+                                            </div>
+                                        </li>
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="cucumber">
+                                                    <use xlink:href="../images/sprite.svg#cucumber"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Овощи</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>200 г</p>
+                                            </div>
+                                        </li>
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="cheese">
+                                                    <use xlink:href="../images/sprite.svg#cheese"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Сыр</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>80 г</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-img">
+                                <img src="images/burger-slide.png" alt="" class="slider__burger">
+                            </div>
+                            <div class="burger-kkal">
+                                <svg class="kkal">
+                                    <use xlink:href="./images/sprite.svg#kkal"></use>
+                                </svg>
+                                <p class="kkal__number">1200</p>
+                                <p class="kkal__name">ККАЛ</p>
+                            </div>
+                        </div>
+                        <div class="slider__desc">
+                            <div class="slider__heading">
+                                <h2 class="banner__heading">Black beef burger</h2>
+                            </div>
+                            <div class="slider__description">
+                                <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                            </div>
+                            <div class="slider__price">
+                                <p>300 <span>рублей</span></p>
+                                <button type="button" class="order">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__content">
+                        <div class="slider__image-block">
+                            <div class="composition-hidden">
+                                <div class="burger-composition" id="ch3">
+                                    <svg class="composition">
+                                        <use xlink:href="./images/sprite.svg#burgerSlide"></use>
+                                    </svg>
+                                    <p>Состав</p>
+                                </div>
+                                <div class="hidden-block" id="hb3">
+
+                                    <svg class="hidden-close">
+                                        <use xlink:href="../images/sprite.svg#close"></use>
+                                    </svg>
+
+                                    <ul class="hidden__list">
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="beef">
+                                                    <use xlink:href="../images/sprite.svg#beef"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Говядина</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>300 г</p>
+                                            </div>
+                                        </li>
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="buns">
+                                                    <use xlink:href="../images/sprite.svg#buns"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Булочка</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>100 г</p>
+                                            </div>
+                                        </li>
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="salad">
+                                                    <use xlink:href="../images/sprite.svg#salad"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Зелень</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>70 г</p>
+                                            </div>
+                                        </li>
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="sauce">
+                                                    <use xlink:href="../images/sprite.svg#sauce"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Соус</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>150 г</p>
+                                            </div>
+                                        </li>
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="cucumber">
+                                                    <use xlink:href="../images/sprite.svg#cucumber"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Овощи</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>200 г</p>
+                                            </div>
+                                        </li>
+                                        <li class="hidden__item">
+                                            <div class="item__pic">
+                                                <svg class="cheese">
+                                                    <use xlink:href="../images/sprite.svg#cheese"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="item__product">
+                                                <p>Сыр</p>
+                                            </div>
+                                            <div class="item__weight">
+                                                <p>80 г</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-img">
+                                <img src="images/burger-slide.png" alt="" class="slider__burger">
+                            </div>
+                            <div class="burger-kkal">
+                                <svg class="kkal">
+                                    <use xlink:href="./images/sprite.svg#kkal"></use>
+                                </svg>
+                                <p class="kkal__number">1200</p>
+                                <p class="kkal__name">ККАЛ</p>
+                            </div>
+                        </div>
+                        <div class="slider__desc">
+                            <div class="slider__heading">
+                                <h2 class="banner__heading">Mega beef burger</h2>
+                            </div>
+                            <div class="slider__description">
+                                <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                            </div>
+                            <div class="slider__price">
+                                <p>100 <span>рублей</span></p>
+                                <button type="button" class="order">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                     <div class="next">
-                        <a href="#">
                             <svg class="next-button">
                                 <use xlink:href="../images/sprite.svg#scroll"></use>
                             </svg>
-                        </a>
                     </div>
                 </div>
             </section>
@@ -289,7 +527,24 @@
                                 <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
                             <div class="members__more">
-                                <button type="button" class="order members__btn">Читать отзыв</button>
+                                <button type="button" class="order members__btn" id="rb1">Читать отзыв</button>
+                            </div>
+                        </div>
+                        <div class="modal-review" id="mr1">
+                            <div class="modal-review__block">
+                                <div class="review__name">
+                                    <div class="name-title">
+                                    <h3>Константин спилберг</h3>
+                                    </div>
+                                    <div class="review__close" id="rk1">
+                                        <svg class="close-rewiew">
+                                            <use xlink:href="../images/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="review__description">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -305,7 +560,24 @@
                                 <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
                             <div class="members__more">
-                                <button type="button" class="order members__btn">Читать отзыв</button>
+                                <button type="button" class="order members__btn" id="rb2">Читать отзыв</button>
+                            </div>
+                        </div>
+                        <div class="modal-review" id="mr2">
+                            <div class="modal-review__block">
+                                <div class="review__name">
+                                    <div class="name-title">
+                                    <h3>Константин спилберг</h3>
+                                    </div>
+                                    <div class="review__close" id="rk2">
+                                        <svg class="close-rewiew">
+                                            <use xlink:href="../images/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="review__description">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -321,7 +593,24 @@
                                 <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
                             <div class="members__more">
-                                <button type="button" class="order members__btn">Читать отзыв</button>
+                                <button type="button" class="order members__btn" id="rb3">Читать отзыв</button>
+                            </div>
+                        </div>
+                        <div class="modal-review" id="mr3">
+                            <div class="modal-review__block">
+                                <div class="review__name">
+                                    <div class="name-title">
+                                    <h3>Константин спилберг</h3>
+                                    </div>
+                                    <div class="review__close" id="rk3">
+                                        <svg class="close-rewiew">
+                                            <use xlink:href="../images/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="review__description">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -337,7 +626,24 @@
                                 <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
                             <div class="members__more">
-                                <button type="button" class="order members__btn">Читать отзыв</button>
+                                <button type="button" class="order members__btn" id="rb4">Читать отзыв</button>
+                            </div>
+                        </div>
+                        <div class="modal-review" id="mr4">
+                            <div class="modal-review__block">
+                                <div class="review__name">
+                                    <div class="name-title">
+                                    <h3>Константин спилберг</h3>
+                                    </div>
+                                    <div class="review__close" id="rk4">
+                                        <svg class="close-rewiew">
+                                            <use xlink:href="../images/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="review__description">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -353,7 +659,24 @@
                                 <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
                             <div class="members__more">
-                                <button type="button" class="order members__btn">Читать отзыв</button>
+                                <button type="button" class="order members__btn" id="rb5">Читать отзыв</button>
+                            </div>
+                        </div>
+                        <div class="modal-review" id="mr5">
+                            <div class="modal-review__block">
+                                <div class="review__name">
+                                    <div class="name-title">
+                                    <h3>Константин спилберг</h3>
+                                    </div>
+                                    <div class="review__close" id="rk5">
+                                        <svg class="close-rewiew">
+                                            <use xlink:href="../images/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="review__description">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -369,7 +692,24 @@
                                 <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
                             <div class="members__more">
-                                <button type="button" class="order members__btn">Читать отзыв</button>
+                                <button type="button" class="order members__btn" id="rb6">Читать отзыв</button>
+                            </div>
+                        </div>
+                        <div class="modal-review" id="mr6">
+                            <div class="modal-review__block">
+                                <div class="review__name">
+                                    <div class="name-title">
+                                    <h3>Константин спилберг</h3>
+                                    </div>
+                                    <div class="review__close" id="rk6">
+                                        <svg class="close-rewiew">
+                                            <use xlink:href="../images/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="review__description">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -385,7 +725,24 @@
                                 <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
                             <div class="members__more">
-                                <button type="button" class="order members__btn">Читать отзыв</button>
+                                <button type="button" class="order members__btn" id="rb7">Читать отзыв</button>
+                            </div>
+                        </div>
+                        <div class="modal-review" id="mr7">
+                            <div class="modal-review__block">
+                                <div class="review__name">
+                                    <div class="name-title">
+                                    <h3>Константин спилберг</h3>
+                                    </div>
+                                    <div class="review__close" id="rk7">
+                                        <svg class="close-rewiew">
+                                            <use xlink:href="../images/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="review__description">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -401,7 +758,24 @@
                                 <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
                             <div class="members__more">
-                                <button type="button" class="order members__btn">Читать отзыв</button>
+                                <button type="button" class="order members__btn" id="rb8">Читать отзыв</button>
+                            </div>
+                        </div>
+                        <div class="modal-review" id="mr8">
+                            <div class="modal-review__block">
+                                <div class="review__name">
+                                    <div class="name-title">
+                                    <h3>Константин спилберг</h3>
+                                    </div>
+                                    <div class="review__close" id="rk8">
+                                        <svg class="close-rewiew">
+                                            <use xlink:href="../images/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="review__description">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -415,8 +789,8 @@
                         </div>
                         <div class="team__member">
                             <ul class="team__list">
-                                <li class="team__item">
-                                    <div class="member-name">
+                                <li class="team__item" id="team-1">
+                                    <div class="member-name" id="name1">
                                         <h3>Дэниел Рэдклиф</h3>
                                     </div>
                                     <div class="member">
@@ -429,8 +803,8 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="team__item team__item--active">
-                                    <div class="member-name">
+                                <li class="team__item" id="team-2">
+                                    <div class="member-name" id="name2">
                                         <h3>Ричард Джеймс</h3>
                                     </div>
                                     <div class="member">
@@ -443,8 +817,8 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="team__item">
-                                    <div class="member-name">
+                                <li class="team__item" id="team-3">
+                                    <div class="member-name" id="name3">
                                         <h3>Джейк Финн</h3>
                                     </div>
                                     <div class="member">
@@ -457,8 +831,8 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="team__item">
-                                    <div class="member-name">
+                                <li class="team__item" id="team-4">
+                                    <div class="member-name" id="name4">
                                         <h3>Николай Иванов</h3>
                                     </div>
                                     <div class="member">
@@ -482,8 +856,8 @@
                 </div>
                 <div class="accordeon-wrap">
                     <ul class="accordeon-list">
-                        <li class="accordeon-item active">
-                            <div class="accordeon__cover accordeon__item--first">
+                        <li class="accordeon-item" id="acc1">
+                            <div class="accordeon__cover accordeon__item--first" id="accItem1">
                                 <div class="toner"></div>
                                 <div class="text">Для мясоедов</div>
                             </div>
@@ -494,8 +868,8 @@
                                     чутко относиться к слову.</p>
                             </div>
                         </li>
-                        <li class="accordeon-item">
-                            <div class="accordeon__cover accordeon__item--second">
+                        <li class="accordeon-item" id="acc2">
+                            <div class="accordeon__cover accordeon__item--second" id="accItem2">
                                 <div class="toner"></div>
                                 <div class="text">Вегетарианское</div>
                             </div>
@@ -506,7 +880,8 @@
                                     чутко относиться к слову.</p>
                             </div>
                         </li>
-                        <div class="accordeon__cover accordeon__item--third">
+                        <li class="accordeon-item" id="acc3">
+                        <div class="accordeon__cover accordeon__item--third" id="accItem3">
                             <div class="toner"></div>
                             <div class="text">Диетическое</div>
                         </div>
@@ -526,47 +901,47 @@
                         <h2 class="banner__heading banner__heading--order">Закажите доставку</h2>
                     </div>
                     <div class="form">
-                        <form action="" class="form__element">
+                        <form action="" class="form__element" method="post" id="myForm">
                             <div class="form__column">
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form__block-title">Имя</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="name" required>
                                     </label>
                                     <label class="form__block">
                                         <div class="form__block-title">Телефон</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="phone" required>
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form__block-title">Улица</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="street" required>
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form__block-title">Дом</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="home" required>
                                     </label>
                                     <label class="form__block">
                                         <div class="form__block-title">Корпус</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="homePart">
                                     </label>
                                     <label class="form__block">
                                         <div class="form__block-title">Квартира</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="flat">
                                     </label>
                                     <label class="form__block form__block-title--hidden-for-mobile">
                                         <div class="form__block-title">Этаж</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="floor">
                                     </label>
                                 </div>
                             </div>
                             <div class="form__column">
                                 <label class="form__block form__block--textarea">
                                     <div class="form__block-title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
+                                    <textarea class="form__input form__input--textarea" name="comment" required></textarea>
                                 </label>
                                 <div class="radio-row">
                                     <label class="radio__label">
@@ -587,11 +962,19 @@
                                     </label>
                                 </div>
                                 <div class="button-row">
-                                    <button type="button" class="order order--form">Заказать</button>
+                                    <button type="submit" class="order order--form" id="sendButton">Заказать</button>
                                     <button type="reset" class="reset">Очистить</button>
                                 </div>
                             </div>
                         </form>
+                        <div class="modal-window">
+                            <div class="modal-wrap">
+                            <div class="modal-text">Сообщение отправлено</div>
+                            <div class="modal-button">
+                                <button type="button" class="order order--modal" name="button" id="modalClose">Закрыть</button>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -725,6 +1108,150 @@
         </div>
     </div>
     <script>
+
+        //review modal
+        var review1 = document.querySelector('#rb1');
+        var review2 = document.querySelector('#rb2');
+        var review3 = document.querySelector('#rb3');
+        var review4 = document.querySelector('#rb4');
+        var review5 = document.querySelector('#rb5');
+        var review6 = document.querySelector('#rb6');
+        var review7 = document.querySelector('#rb7');
+        var review8 = document.querySelector('#rb8');
+
+        var reviewWindow1 = document.querySelector('#mr1');
+        var reviewWindow2 = document.querySelector('#mr2');
+        var reviewWindow3 = document.querySelector('#mr3');
+        var reviewWindow4 = document.querySelector('#mr4');
+        var reviewWindow5 = document.querySelector('#mr5');
+        var reviewWindow6 = document.querySelector('#mr6');
+        var reviewWindow7 = document.querySelector('#mr7');
+        var reviewWindow8 = document.querySelector('#mr8');
+
+        var reviewClose1 = document.querySelector('#rk1');
+        var reviewClose2 = document.querySelector('#rk2');
+        var reviewClose3 = document.querySelector('#rk3');
+        var reviewClose4 = document.querySelector('#rk4');
+        var reviewClose5 = document.querySelector('#rk5');
+        var reviewClose6 = document.querySelector('#rk6');
+        var reviewClose7 = document.querySelector('#rk7');
+        var reviewClose8 = document.querySelector('#rk8');
+
+        review1.addEventListener('click', function () {
+            reviewWindow1.classList.add('modal-review--active');
+            reviewClose1.addEventListener('click', function() {
+                reviewWindow1.classList.remove('modal-review--active');
+            });
+        });
+        review2.addEventListener('click', function () {
+            reviewWindow2.classList.add('modal-review--active');
+            reviewClose2.addEventListener('click', function() {
+                reviewWindow2.classList.remove('modal-review--active');
+            });
+        });
+        review3.addEventListener('click', function () {
+            reviewWindow3.classList.add('modal-review--active');
+            reviewClose3.addEventListener('click', function() {
+                reviewWindow3.classList.remove('modal-review--active');
+            });
+        });
+        review4.addEventListener('click', function () {
+            reviewWindow4.classList.add('modal-review--active');
+            reviewClose4.addEventListener('click', function() {
+                reviewWindow4.classList.remove('modal-review--active');
+            });
+        });
+        review5.addEventListener('click', function () {
+            reviewWindow5.classList.add('modal-review--active');
+            reviewClose5.addEventListener('click', function() {
+                reviewWindow5.classList.remove('modal-review--active');
+            });
+        });
+        review6.addEventListener('click', function () {
+            reviewWindow6.classList.add('modal-review--active');
+            reviewClose6.addEventListener('click', function() {
+                reviewWindow6.classList.remove('modal-review--active');
+            });
+        });
+        review7.addEventListener('click', function () {
+            reviewWindow7.classList.add('modal-review--active');
+            reviewClose7.addEventListener('click', function() {
+                reviewWindow7.classList.remove('modal-review--active');
+            });
+        });
+        review8.addEventListener('click', function () {
+            reviewWindow8.classList.add('modal-review--active');
+            reviewClose8.addEventListener('click', function() {
+                reviewWindow8.classList.remove('modal-review--active');
+            });
+        });
+
+
+        //end of review
+
+        //form
+
+        const form = document.querySelector('#myForm')
+
+        form.addEventListener('submit', function() {
+            event.preventDefault();
+
+        const data = new FormData();
+        data.append('name', form.elements.name.value);
+        data.append('phone', form.elements.phone.value);
+        data.append('comment', form.elements.comment.value);
+        data.append('to', 'artemclimenko@gmail.com');
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail', 'true');
+        xhr.send(data);
+
+        xhr.onload = function() {
+            modal.classList.add('modal-window--active');
+        }
+        modalClose.addEventListener('click', function() {
+            modal.classList.remove('modal-window--active');
+        });
+
+        xhr.onerror = function() {
+            // console.log('ошибка');
+        }
+    });
+
+
+        //MOdalWindow
+
+        var modal = document.querySelector('.modal-window');
+        var modalClose = document.getElementById('modalClose');
+
+
+        //MOdalWindow End
+
+
+        //form-end
+
+        //slide
+        const left = document.querySelector('.prev-button');
+        const right = document.querySelector('.next-button');
+        const items = document.querySelector('.slide-wrapper');
+
+        right.addEventListener('click', function() {
+            loop('right');
+        });
+
+        left.addEventListener('click', function() {
+            loop('left');
+        });
+
+        function loop(direction) {
+            if (direction === 'right') {
+                items.appendChild(items.firstElementChild);
+            } else {
+                items.insertBefore(items.lastElementChild, items.firstElementChild);
+            }
+        }
+//Окончание секкции для слайдера
+//Блок с переменными
         var hm = document.querySelector('.burger-menu');
         var nav = document.querySelector('.nav');
         var close = document.querySelector('.close');
@@ -732,11 +1259,83 @@
         var link = document.querySelector('.menu__item');
         var logo = document.querySelector('.hidden-logo');
 
-        var closeSlide = document.querySelector('.hidden-block');
-        var composition = document.querySelector('.hidden-block');
-        var openBlock = document.querySelector('.composition-hidden');
+        var closeSlide1 = document.querySelector('#hb1');
+        var closeSlide2 = document.querySelector('#hb2');
+        var closeSlide3 = document.querySelector('#hb3');
+        var composition1 = document.querySelector('#hb1');
+        var composition2 = document.querySelector('#hb2');
+        var composition3 = document.querySelector('#hb3');
+        var openBlock1 = document.querySelector('#ch1');
+        var openBlock2 = document.querySelector('#ch2');
+        var openBlock3 = document.querySelector('#ch3');
 
+        //для аккордеона Команда
+        var memberName1 = document.querySelector('#name1');
+        var memberName2 = document.querySelector('#name2');
+        var memberName3 = document.querySelector('#name3');
+        var memberName4 = document.querySelector('#name4');
 
+        var team1 = document.querySelector('#team-1');
+        var team2 = document.querySelector('#team-2');
+        var team3 = document.querySelector('#team-3');
+        var team4 = document.querySelector('#team-4');
+
+        memberName1.addEventListener('click', function(){
+            team1.classList.toggle('team__item--active');
+            team2.classList.remove('team__item--active');
+            team3.classList.remove('team__item--active');
+            team4.classList.remove('team__item--active');
+        });
+        memberName2.addEventListener('click', function(){
+            team2.classList.toggle('team__item--active');
+            team1.classList.remove('team__item--active');
+            team3.classList.remove('team__item--active');
+            team4.classList.remove('team__item--active');
+        });
+        memberName3.addEventListener('click', function(){
+            team3.classList.toggle('team__item--active');
+            team2.classList.remove('team__item--active');
+            team1.classList.remove('team__item--active');
+            team4.classList.remove('team__item--active');
+        });
+        memberName4.addEventListener('click', function(){
+            team4.classList.toggle('team__item--active');
+            team2.classList.remove('team__item--active');
+            team3.classList.remove('team__item--active');
+            team1.classList.remove('team__item--active');
+        });
+        //конец аккордеона Команда
+
+        //начало для меню
+        var menuItem1 = document.querySelector('#accItem1');
+        var menuItem2 = document.querySelector('#accItem2');
+        var menuItem3 = document.querySelector('#accItem3');
+
+        var sect1 = document.querySelector('#acc1');
+        var sect2 = document.querySelector('#acc2');
+        var sect3 = document.querySelector('#acc3');
+
+        menuItem1.addEventListener('click', function() {
+            sect1.classList.toggle('active');
+            sect2.classList.remove('active');
+            sect3.classList.remove('active');
+
+        });
+
+        menuItem2.addEventListener('click', function() {
+            sect2.classList.toggle('active');
+            sect1.classList.remove('active');
+            sect3.classList.remove('active');
+        });
+
+        menuItem3.addEventListener('click', function() {
+            sect3.classList.toggle('active');
+            sect1.classList.remove('active');
+            sect2.classList.remove('active');
+        });
+
+        //Конец для меню
+//Всплывающее меню на весь экран
         hm.addEventListener('click', function() {
             nav.classList.toggle('nav--active');
         });
@@ -753,23 +1352,59 @@
             nav.classList.remove('nav--active');
             console.log('удалил класс');
         });
+//Для десктопа вместо ховера
+        openBlock1.addEventListener('mouseover', function() {
 
-        openBlock.addEventListener('mouseover', function() {
-            if (document.documentElement.clientWidth) {
-                composition.classList.add('hidden-active');
-            }
+                composition1.classList.add('hidden-active');
+
         });
 
-        openBlock.addEventListener('mouseout', function() {
-            if (document.documentElement.clientWidth) {
-                composition.classList.remove('hidden-active');
-            }
+        openBlock2.addEventListener('mouseover', function() {
+
+                composition2.classList.add('hidden-active');
+
         });
 
-        closeSlide.addEventListener('click', function() {
-            if (document.documentElement.clientWidth) {
-                composition.classList.remove('hidden-active');
-            }
+        openBlock3.addEventListener('mouseover', function() {
+
+                composition3.classList.add('hidden-active');
+
+        });
+
+        openBlock1.addEventListener('mouseout', function() {
+
+                composition1.classList.remove('hidden-active');
+
+        });
+
+        openBlock2.addEventListener('mouseout', function() {
+
+                composition2.classList.remove('hidden-active');
+
+        });
+
+        openBlock3.addEventListener('mouseout', function() {
+
+                composition3.classList.remove('hidden-active');
+
+        });
+    //Для мобильных устройств скрывать блок с составом
+        closeSlide1.addEventListener('click', function() {
+
+                composition1.classList.remove('hidden-active');
+
+        });
+
+        closeSlide2.addEventListener('click', function() {
+
+                composition2.classList.remove('hidden-active');
+
+        });
+
+        closeSlide3.addEventListener('click', function() {
+
+                composition3.classList.remove('hidden-active');
+
         });
     </script>
 </body>

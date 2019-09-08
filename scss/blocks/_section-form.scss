@@ -24,3 +24,40 @@
 .banner__heading--order {
     text-align: center;
 }
+
+.modal-window, {
+    position: fixed;
+    background-color: rgba(47, 50, 52, .9);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+    display: none;
+}
+
+.modal-window--active, {
+    display: flex;
+}
+
+.modal-wrap {
+    min-width: 230px;
+    background-color: $commonColor;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-text {
+    margin-bottom: 20px;
+    font-family: 'ubunturegular';
+}
+
+.order--modal {
+    margin-right: 0;
+}

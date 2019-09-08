@@ -9,6 +9,15 @@
     flex-flow: row;
     margin: 0 auto;
     align-items: center;
+    max-width: rem(940px);
+    overflow: hidden;
+}
+
+.slide-wrapper {
+    display: flex;
+    position: relative;
+    max-width: 940px;
+    overflow: hidden;
 }
 
 .slider__image-block {
@@ -55,7 +64,11 @@
     max-width: 90px;
 
     @include tablets {
-        margin-left: 3%;
+        margin-left: 0;
+    };
+
+    @include smallPhones {
+        margin-left: 6%;
     };
 }
 
@@ -75,6 +88,11 @@
 
     @include phones {
         max-width: 250px;
+        left: 70px;
+    };
+
+    @include smallPhones {
+        max-width: 215px;
         left: 70px;
     };
 }
@@ -177,9 +195,9 @@
     };
 
     @include phones {
-    //    position: absolute;
-    //    left: 90%;
-    //    bottom: rem(410px);
+
+    left: 80%;
+
     };
 }
 
@@ -192,9 +210,9 @@
     color: $commonColor;
 
     @include phones {
-        bottom: rem(25px);
-        left: rem(16px);
-        font-size: rem(33px);
+        bottom: rem(30px);
+        left: rem(20px);
+        font-size: rem(28px);
     };
 }
 
@@ -206,12 +224,18 @@
     font-size: rem(20px);
     color: $commonColor;
 
+    @include tablets {
+        font-size: rem(14px);
+        bottom: rem(23px);
+        left: rem(15px);
+    };
+
     @include phones {
         bottom: rem(20px);
-        left: rem(8px);
+        left: rem(28px);
         bottom: 0;
         top: 60px;
-        font-size: rem(33px);
+        font-size: rem(14px);
     };
 }
 
@@ -220,27 +244,57 @@
 }
 
 .prev, .next {
-    width: 40px;
+    width: 50px;
     display: flex;
     align-items: center;
     height: 50px;
-    margin-top: 20%;
+    cursor: pointer;
+
+    @include tablets {
+        margin-top: rem(25px);
+    };
+
 }
 
 .prev-button {
     transform: rotate(90deg);
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     position: absolute;
+    left: rem(50px);
+    z-index: 300;
+
+    @include tablets {
+        left: rem(50px);
+    };
+
+    @include phones {
+        left: 0;
+        margin-top: 60px;
+    };
+
+    @include smallPhones {
+        margin-top: 93px;
+    };
 }
 .next-button {
     transform: rotate(-90deg);
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     position: absolute;
+    left: 92%;
 
     @include tablets {
-        right: 10px;
+        left: 89%;
+    };
+
+    @include phones {
+        left: 84%;
+        margin-top: 40px;
+    };
+
+    @include smallPhones {
+        margin-top: 73px;
     };
 }
 
@@ -248,13 +302,31 @@
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    max-width: rem(940px);
+    min-width: 100%;
+    margin-right: 50px;
+    //border: 1px solid black;
+
+    &:last-child {
+        margin-right: 0;
+    }
 
     @include tablets {
         flex-flow: column;
         align-items: center;
+        width: 768px;
         max-width: 95%;
+        margin-right: 0
     };
+    @include phones{
+        flex-flow: column;
+        align-items: center;
+        max-width: 480px;
+        margin-right: 30px;
+    };
+}
+
+.main-img {
+    max-width: 300px;
 }
 
 .slider__desc {
@@ -264,12 +336,12 @@
 
     @include tablets {
         padding-right: 0;
-        padding: 0 10%;
+        padding: 0 18%;
         align-items: center;
     };
 
     @include phones {
-        padding: 0;
+        padding: 0 10%;
     };
 }
 
@@ -284,11 +356,17 @@
     margin-bottom: rem(55px);
 
     @include tablets {
-        margin-bottom: rem(50px);
+        font-size: rem(60px);
+        margin-bottom: rem(20px);
     };
 
     @include phones {
         font-size: rem(70px);
+        margin-bottom: rem(30px);
+    };
+
+    @include smallPhones {
+        font-size: rem(50px);
         margin-bottom: rem(30px);
     };
 }
@@ -302,6 +380,7 @@
 
     @include tablets {
         text-align: center;
+        margin-bottom: rem(8px);
     };
 
     @include phones {

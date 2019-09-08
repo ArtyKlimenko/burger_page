@@ -91,3 +91,56 @@ button.members__btn {
     border: none;
     background-color: $dark;
 }
+
+.modal-review {
+    position: fixed;
+    background-color: rgba(47, 50, 52, .9);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+    display: none;
+
+    @include tablets {
+        padding: 0 20px;
+    };
+}
+
+.modal-review--active {
+    display: flex;
+}
+
+.modal-review__block {
+    display: flex;
+    flex-flow: column;
+    background-color: $commonColor;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 460px;
+}
+
+.review__name {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-family: 'Gagalin';
+    color: $dark;
+}
+
+.close-rewiew {
+    width: 20px;
+    height: 20px;
+    fill: $red;
+}
+
+.review__description {
+    font-family: 'ubunturegular';
+    font-size: 14px;
+    line-height: 1.7em;
+    color: $dark;
+}

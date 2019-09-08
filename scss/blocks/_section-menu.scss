@@ -103,6 +103,10 @@
   font-size: rem(14px);
   line-height: 1.7em;
   overflow: hidden;
+
+  @include tablets {
+      font-size: rem(18px);
+  };
 }
 
 .accordeon-item.active .secret {
