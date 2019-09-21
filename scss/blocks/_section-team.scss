@@ -1,0 +1,151 @@
+.section-team {
+    position: relative;
+    background: url('/images/our-team.png') center center / cover no-repeat;
+}
+
+.half-block {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    background-color: rgba(49, 52, 53, .9);
+    padding: rem(115px) 0 0 rem(95px);
+
+    @include tablets {
+        width: initial;
+        left: 0;
+        right: 0;
+        padding-left: 0;
+        display: flex;
+flex-flow: column;
+align-items: center;
+    };
+}
+
+.team {
+    @include tablets {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    };
+}
+
+.team__heading .banner__heading {
+    @include phones {
+        font-size: 50px;
+    };
+}
+
+.team__item {
+    margin-bottom: rem(35px);
+
+    @include tablets {
+        text-align: center;
+
+    };
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.member-name {
+    font-family: 'Gagalin';
+    color: $commonColor;
+    font-size: rem(14px);
+    position: relative;
+
+    @include tablets {
+        display: inline-flex;
+    };
+
+    @include phones {
+        display: inline-flex;
+        font-size: rem(25px);
+    };
+}
+
+.member-name h3 {
+    padding-left: rem(20px);
+    &::before {
+        content: "";
+        background: url('/images/point-down.png') center center no-repeat;
+        width: rem(20px);
+        height: rem(20px);
+        display: block;
+        position: absolute;
+        left: rem(-5px);
+
+        @include phones {
+            top: rem(7px);
+        };
+    }
+}
+
+.member {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: rem(20px) 0 0 rem(20px);
+    max-width: rem(350px);
+    align-items: center;
+
+    @include  tablets {
+        margin-left: 0;
+        display: flex;
+        flex-flow: column;
+    };
+}
+
+.member-avatar {
+    max-height: rem(100px);
+}
+.avatar {
+    border-radius: 50%;
+}
+
+.member-introduce {
+    padding-left: rem(20px);
+    color: $commonColor;
+    font-size: rem(14px);
+    line-height: 1.5em;
+    font-family: 'ubunturegular';
+
+    @include tablets {
+        padding-left: 0;
+        margin-top: rem(10px);
+    };
+
+    @include phones {
+        padding-left: 0;
+        margin-top: rem(75px);
+    };
+}
+
+.profession {
+    font-size: inherit;
+    margin-bottom: rem(15px);
+}
+
+.team__item--active .member {
+    height: 100%;
+    overflow: inherit;
+}
+
+.team__item--active .member-name {
+    color: $yellow;
+}
+
+.team__item--active .member-name h3 {
+    padding-left: rem(20px);
+    &::before {
+        content: "";
+        background: url('/images/point-up.png') center center no-repeat;
+        width: rem(20px);
+        height: rem(20px);
+        display: block;
+        position: absolute;
+        left: rem(-5px);
+    }
+}

@@ -1,0 +1,6 @@
+.section-contacts {
+  position: relative;
+  background: url("/images/map.png") center center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

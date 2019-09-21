@@ -1,3 +1,53 @@
+@mixin smallPhones {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+html {
+    font-size: 16px;
+
+    @include tablets {
+        font-size: 16px;
+    };
+
+    @include phones {
+        font-size: 11px;
+    };
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'ubunturegular';
+    -webkit-font-smoothing: antialiased;
+}
+
+.section {
+    height: 100vh;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -7,17 +57,6 @@ ul {
     padding: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'ubunturegular';
-    -webkit-font-smoothing: antialiased
-}
-
-.wrapper {
-    min-height: 100vh;
+ul li {
+    list-style-type: none;
 }

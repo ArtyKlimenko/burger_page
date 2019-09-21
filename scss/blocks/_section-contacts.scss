@@ -1,0 +1,125 @@
+.section-contacts {
+    position: relative;
+    background: url('/images/map.png') center center / cover no-repeat;
+    display: flex;
+}
+
+.marker {
+    width: rem(57px);
+    height: rem(46px);
+    position: absolute;
+}
+
+.first {
+    left: 44.3%;
+    top: 28.7%;
+}
+
+.second {
+    left: 60%;
+    top: 40%;
+}
+
+.third {
+    left: 84.4%;
+    top: 57%;
+}
+
+.fourth {
+    left: 45.4%;
+    top: 70%;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    min-height: rem(75px);
+    width: 100%;
+    background: url('/images/pattern.png') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.footer-wrap {
+    max-width: rem(940px);
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex: 1;
+
+    @include tablets {
+        max-width: 95%;
+    };
+
+    @include phones {
+        flex-flow: column;
+    };
+}
+
+.address {
+    flex: 1;
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin-top: rem(10px);
+
+    @include phones {
+        align-items: center;
+    };
+
+}
+
+.street {
+    padding-bottom: rem(14px);
+    font-family: 'ubunturegular';
+    font-size: rem(14px);
+}
+
+.phone {
+    font-family: 'ubuntubold';
+    color: $red;
+    font-size: rem(14px);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-align: left;
+}
+.social {
+    flex: 1;
+    text-align: right;
+    padding-top: rem(16px);
+}
+
+.social-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.social-item {
+    padding-right: rem(10px);
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.icons {
+    width: rem(36.711px);
+    height: rem(36.711px);
+    fill: #5c5c5c;
+
+    &:hover {
+        fill: $commonColor;
+    }
+}
+
+.phone-icon {
+    width: rem(20px);
+    height: rem(16px);
+}
+.icons.vk {
+    padding-bottom: rem(5px);
+}
